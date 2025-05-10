@@ -83,11 +83,97 @@ header a{
   text-align: left;
 }
 
-.project-box button {
-  margin-top: 10px;
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: 1px solid #000;
-  background: transparent;
-  cursor: pointer;
+
+  .project-box button {
+  display: block;
+  margin: 10px auto 0; /* Top margin for spacing, auto for horizontal centering */
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: gray;
+  color: black;
+  cursor: pointer;
+}
+footer{
+    padding:50px;
+    text-align: center;
+    background-color: gray;
+    color: black;
+    font-size: large;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* SERVICES */
+.services-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 40px 20px;
+  background-color:gainsboro;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* CONTACT */
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
