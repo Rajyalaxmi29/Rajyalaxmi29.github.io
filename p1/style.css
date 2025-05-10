@@ -19,7 +19,7 @@ header li{
     font-size: 20px;
     padding:5px;
 }
-header a{
+a{
     text-decoration: none;
 }
 .row{
@@ -34,7 +34,7 @@ header a{
     padding: 50px;
 }
 .btn{
-    background-color:  gray;
+    background-color:  darkgray;
     margin-top: 10px;
     padding: 10px;
     font-size: 20px;
@@ -90,7 +90,7 @@ header a{
   padding: 8px 16px;
   border-radius: 8px;
   border: none;
-  background-color: gray;
+  background-color: darkgray;
   color: black;
   cursor: pointer;
 }
