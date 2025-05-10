@@ -32,6 +32,7 @@ a{
 .box{
     width: 500px;
     padding: 50px;
+    transition: transform 0.5s;
 }
 .btn{
     background-color:  darkgray;
@@ -75,12 +76,13 @@ a{
 .project-box {
   width: 250px;
   height: 150px;
-  border: 2px solid #000;
+  
   border-radius: 15px;
   padding: 15px;
   background-color: #fefefe;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+   transition: transform 0.5s;
 }
 
 
@@ -129,6 +131,7 @@ footer{
   border-radius: 12px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+   transition: transform 0.5s;
 }
 
 /* ABOUT */
@@ -143,6 +146,7 @@ footer{
   margin: auto;
   font-size: 18px;
   line-height: 1.6;
+    transition: transform 0.5s;
 }
 
 /* CONTACT */
@@ -177,3 +181,21 @@ footer{
   border-radius: 8px;
   cursor: pointer;
 }
+.box:hover{
+
+  background-color: white;
+  transform: scale(1.1,1.1);
+}
+.service-box:hover{
+  background-color: white;
+  transform: scale(1.1,1.1);
+
+}
+  .project-box:hover{
+     background-color: white;
+  transform: scale(1.1,1.1);
+  }
+  .about-container:hover{
+     background-color:gainsboro ;
+  transform: scale(1.1,1.1);
+  }
