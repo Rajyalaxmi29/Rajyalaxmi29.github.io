@@ -1,3 +1,19 @@
+  body {
+      margin: 0;
+      height: 100vh;
+      background-color: cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      background-color: red;
+      color: black;
+      font-size: 2em;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +30,7 @@
     .box {
       background-color: yellow;
       width: 100%;
+      text-align: center;
     }
   }
   @media only screen and (min-width: 600px) {
@@ -25,6 +42,6 @@
   @media only screen and (min-width: 1000px) {
     .box {
       background-color: red;
-      width: 25%;
+      width: 44%;
     }
   }
