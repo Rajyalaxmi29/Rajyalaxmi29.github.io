@@ -6,3 +6,4 @@ const product = [
 ];
 
 product.forEach((product)=>console.log(product.name))
+product.forEach((product)=>console.log(product.price))
