@@ -6,5 +6,14 @@ const product = [
 
 ];
 
-product.forEach((product)=>console.log(product.price+5))
-product.forEach((product)=>console.log(product.name))
+//product.forEach((product)=>console.log(product.price+5))
+//product.forEach((product)=>console.log(product.name))
+
+let pro=product.map((value)=>value.price+5)
+
+console.log(pro)
+
+
+let name=product.map((value)=>value.name)
+console.log(name)
+
