@@ -7,16 +7,21 @@ const product = [
 //item id and qty
 
 const cart={1:7,3:5}
-
+// short circuting
 product.map(value=>{
+    cart[value.id] && (
+   
+    console.log(value.id,value.name,value.price,value.price*cart[value.id])
+    )
+});
+
+
+/*product.map(value=>{
     if(cart[value.id]){
      const qty = cart[value.id] ;
     console.log(value.id,value.name,value.price,value.price*qty)
     }
 });
-
-
-
 
 
 
