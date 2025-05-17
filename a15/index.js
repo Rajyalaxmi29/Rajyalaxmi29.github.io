@@ -9,11 +9,11 @@ const product = [
 const cart={1:7,3:5}
 
 product.map(value=>{
+    if(cart[value.id]){
      const qty = cart[value.id] ;
     console.log(value.id,value.name,value.price,value.price*qty)
-})
-
-
+    }
+});
 
 
 
