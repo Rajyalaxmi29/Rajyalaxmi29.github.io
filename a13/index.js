@@ -17,14 +17,20 @@ console.log(pro)
 let name=product.map((value)=>value.name)
 console.log(name)*/
 
-let updatedProducts = product.map((value) => {
+/*let updatedProducts = product.map((value) => {
   return {
     name: value.name,
     price: value.price + 5
   };
 });
 
-console.log(updatedProducts);
+console.log(updatedProducts);*/
+
+//spread operator
+
+let updatedProducts = product.map((product) => ({
+  ...product,price:product.price+5}));
+
 
 
 
