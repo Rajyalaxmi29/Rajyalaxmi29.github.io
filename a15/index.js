@@ -1,15 +1,38 @@
+const product = [
+    {id:1,name:"apple",price:23},
+     {id:2,name:"orange",price:13},
+      {id:3,name:"banana",price:29}
+
+];
+//item id and qty
+
+const cart={1:7,3:5}
+
+product.map(value=>{
+     const qty = cart[value.id] ;
+    console.log(value.id,value.name,value.price,value.price*qty)
+})
+
+
+
+
+
+
+
+
+
 // adding total column
 
-const product = [
+/*const product = [
     {id:1,name:"apple",price:23,qty:3,status:"pending"},
      {id:2,name:"orange",price:13,qty:4,status:"pending"},
       {id:3,name:"banana",price:29,qty:2,status:"pending"}
 
-];
+];*/
 
 //print name,price,qty,total where qty>2
 
-let updatedProducts = product.map((product) => ({
+/*let updatedProducts = product.map((product) => ({
   ...product,price:product.price+5,status:"complete"
   ,name:product.name,total:product.price*product.qty
 }));
@@ -18,7 +41,7 @@ let pro = updatedProducts.filter((value) => {
   return value.qty > 2; 
 });
 
-console.log(pro);
+console.log(pro); 
 
 
 
