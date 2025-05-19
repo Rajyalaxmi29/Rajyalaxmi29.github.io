@@ -11,10 +11,10 @@
     }
 
     .container {
-     
       padding: 30px;
       width: 50%;
       margin: auto;
+      
     }
 
     input[type="text"] {
@@ -37,6 +37,7 @@
     #nameDisplay {
       margin-top: 40px;
       font-size: 18px;
+      white-space: pre-line; /* allows line breaks */
     }
   </style>
 </head>
@@ -49,7 +50,7 @@
 
   <script>
     async function fetchUser() {
-      const email = document.getElementById("emailInput").value;
+      const email = document.getElementById("emailInput").value.trim();
       const nameDisplay = document.getElementById("nameDisplay");
 
       try {
@@ -59,12 +60,16 @@
         const user = users.find(u => u.email.toLowerCase() === email.toLowerCase());
 
         if (user) {
-          nameDisplay.textContent = user.name;
+          const postsRes = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
+          const posts = await postsRes.json();
+
+          // Show name and post count on next line
+          nameDisplay.innerText = `${user.name}\nNumber of posts: ${posts.length}`;
         } else {
-          nameDisplay.textContent = "User not found";
+          nameDisplay.innerText = "User not found";
         }
       } catch (error) {
-        nameDisplay.textContent = "Error fetching data";
+        nameDisplay.innerText = "Error fetching data";
       }
     }
   </script>
