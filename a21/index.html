@@ -37,7 +37,7 @@
     #nameDisplay {
       margin-top: 40px;
       font-size: 18px;
-      white-space: pre-line; /* allows line breaks */
+      white-space: pre-line; 
     }
   </style>
 </head>
@@ -63,7 +63,7 @@
           const postsRes = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
           const posts = await postsRes.json();
 
-          // Show name and post count on next line
+          
           nameDisplay.innerText = `${user.name}\nNumber of posts: ${posts.length}`;
         } else {
           nameDisplay.innerText = "User not found";
