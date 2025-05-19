@@ -2,6 +2,66 @@
 
 
 
+
+//destructing objects
+/*const user =[{'id':1,'name':'raji','price':49},{'id':2,'name':'ji','price':8},{'id':2,'name':'ji','price':8}]
+const[id,name,price]=user
+console.log(name);
+const{name:full}=user
+console.log(name)
+
+
+
+
+//destructing of array
+
+/*const num=[23,4,5]
+const[a,b,c]=num
+console.log(a)
+
+
+
+/*const user =[{'id':1,'name':'raji','price':49},{'id':2,'name':'ji','price':8}]
+//rest in objects
+const[f,...last]=user
+console.log(last)
+
+/*const score=[2,43,5,67,44]
+// rest in destruction
+const[a,...arrscore]=score
+console.log(arrscore[3])*/
+
+
+// rest in function
+/*function add(...values){
+ return values.filter((value)=>value>3)
+}
+console.log(add(3,4,5))
+
+/*function mul(...values){
+return values.reduce((a,b)=>a*b)
+}
+console.log(mul(3,4,22,3))
+
+
+/*const products = [
+  { id: 1, name: "p1", price: 34 },
+  { id: 2, name: "p2", price: 50 },
+  { id: 3, name: "p3", price: 75 },
+];
+
+
+const newProduct = { id: 4, name: "p4", price: 90 };
+
+const newProducts = [...products,newProduct]
+//console.log(newProducts)
+
+const incre = newProducts.map((value)=>({...value,price:value.price+5}))
+
+incre.forEach(Element=>{
+    console.log(`name:${Element.name},price:${Element.price}`)
+})
+ 
 /*function add(x,y){
     return new Promise((resolve,reject)=>{
         if(x<4){
