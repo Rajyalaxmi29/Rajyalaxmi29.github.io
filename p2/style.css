@@ -38,3 +38,8 @@ footer {
     min-height: 600px;
     padding: 10px;
 }
+#orderValue {
+  text-align: center;
+  font-weight: bold; /* optional for better visibility */
+  margin-top: 20px;  /* optional spacing */
+}

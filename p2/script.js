@@ -47,6 +47,17 @@ const dispCart = () => {
       `;
     }
   });
+  str += `<h4 id='orderValue'></h4>`;
+  root.innerHTML = str;
+  dispOrderValue();
+};
+
+const dispOrderValue = () => {
+  const grandTotal = products.reduce((sum, value) => {
+    return sum + value.price * (cart[value.id] ?? 0);
+  },0);
+  orderValue.innerHTML = `Order Value: ${grandTotal}`;
+
 
   if (isEmpty) {
     str += `<p style="text-align:center; width: 100%;">Your cart is empty.</p>`;
@@ -56,6 +67,7 @@ const dispCart = () => {
 
   document.getElementById("root").innerHTML = str;
 };
+
 
 
 const showProducts = () => {
@@ -70,3 +82,4 @@ const showProducts = () => {
   });
   root.innerHTML = "<div class='row'>" + str + "</div>";
 };
+
