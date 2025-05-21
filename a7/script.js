@@ -1,4 +1,4 @@
-/*const greet = () => {
+const greet = () => {
 
   const num1 = parseFloat(document.getElementById("num1").value);
   const num2 = parseFloat(document.getElementById("num2").value);
@@ -25,8 +25,8 @@
   
 
 
-  const output = `Addition: ${result1}<br>Subtraction: ${result2}<br>Multiplication: ${result3}<br>Division: ${result4}`;
-  document.getElementById("output").innerHTML = output;
+  const output1 = `Addition: ${result1}<br>Subtraction: ${result2}<br>Multiplication: ${result3}<br>Division: ${result4}`;
+  document.getElementById("output").innerHTML = output1;
 };
   function greet1() {
       document.getElementById("output").style.left = "70%";
@@ -34,8 +34,8 @@
 
     function greet2() {
       document.getElementById("output").style.left = "100%";
-    }*/
-   const greet = () => {
+    }
+   /*const greet = () => {
   const num1 = parseFloat(document.getElementById("num1").value);
   const num2 = parseFloat(document.getElementById("num2").value);
 
@@ -67,5 +67,5 @@ function greet1() {
 
 function greet2() {
   document.getElementById("output").style.left = "100%";
-}
+}*/
 
